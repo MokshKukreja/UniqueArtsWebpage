@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body,html{
+    overflow-x: hidden;
+}
+.designs-content img,.about-row img{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.designs-content img:hover,.about-row img:hover{
+    transform: scale(1.1);
+}
+.navbar{
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+}
+.nav-links li{
+    margin: -10px 10px;
+}
+.nav-links li a{
+    color: black;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+.nav-links li a.active{
+    text-decoration: underline;
+}
+.nav-links li a:hover{
+    background: linear-gradient(to right,#ff469f,#ff6062);
+    color: whitesmoke;
+}
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 13px;
+    margin: 50px 70px;
+}
+.header-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-col h1{
+    margin-top: 12px;
+    font-size: 6vmin;
+}
+.header-col h3{
+    margin-top: 10px;
+    font-size: 3.5vmin;
+}
+.header-col .add{
+    margin-top: 10px;
+    font-size: 2.5vmin;
+}
+.header-col .main-logo{
+    height: 300px;
+}
+.btn{
+   width: 150px ;
+   padding: 10px 10px;
+   background: linear-gradient(to right,#ff469f,#ff6062);
+   color: whitesmoke;
+   border: none;
+   border-radius: 10px;
+   margin-top: 12px;
+   cursor: pointer; 
+   transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.logo{
+    height: 65px;
+}
+/* About */
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    margin-top: 30px;
+}
+.line{
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right,#ff469f,#ff6062);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.about{
+    background-color: #f3f2f2;
+    padding: 20px;
+    border-radius: 70px;
+}
+.about-row{
+    margin: 40px;
+}
+.about-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-col img{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+.about-col p{
+    font-size: 2.5vmin;
+    text-align: left;
+}
+.about-col h2{
+    margin-top: 20px;
+    font-size: 3.5vmin;
+}
+.about-col .para{
+    margin: 0px 40px;
+}
+.about-col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-col2 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+.about-col2 p{
+    font-size: 2.5vmin;
+    text-align: left;
+}
+.about-col2 h2{
+    margin-top: 20px;
+    font-size: 3.5vmin;
+}
+.about-col2 .para{
+    margin: 0px 40px;
+}
+
+/* Designs */
+
+.designs-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.designs-content img{
+    padding: 20px;
+    height: 220px;
+}
+.designs{
+    background-color: #f3f2f2;
+    border-radius: 70px;
+}
+.designs h2{
+    padding-top: 30px;
+}
+
+/* Contact */
+.contact h2{
+    padding-top: 30px;
+}
+.contact{
+    background-color: #f3f2f2;
+    border-radius: 70px;
+    padding-bottom: 30px;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+}
+.contact-box input{
+    padding: 10px;
+    margin: 7px 50px;
+    font-size: 1.1rem;
+    border: 1px solid #ffd1e7;
+}
+.contact button{
+    margin: 12px 50px;
+}
+
+.footer{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0;
+    text-align: center;
+    background-color: #000;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:720px){
+.navbar{
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    height: 65px;
+    width: 80px;
+    margin-bottom: 30px;
+}
+.header-row{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.header-col{
+    align-items: center;
+}
+.about-col{
+    flex-wrap: wrap;
+}
+.about-col2{
+    flex-wrap: wrap-reverse;
+}
+}
